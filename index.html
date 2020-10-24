@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .rawcode div{
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+        }
+        .rawcode div span{
+            min-width: 30px;
+            display: inline-block;
+        }
+
+        .bin-code{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .bin-item{
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 0 0 100%;
+        }
+        .bin-single-code{
+            flex: 0 0 360px;
+        }
+
+    </style>
+</head>
+<body class="w-100">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 p-4">
+                <input type="file" accept="text/plain" id="input" class="mx-auto d-block">
+            </div>
+            <div class="col-12">
+                <button id="convert" class="mx-auto d-block btn btn-primary">Converter</button>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-6 rawcode">
+                
+            </div>
+            <div class="col-6 bincode">
+
+            </div>
+            <div class="col-12 error-feedback p-2">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./util.js"></script>
+    <script src="./mipstobin.js"></script>
+</body>
+</html>
